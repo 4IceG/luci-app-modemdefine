@@ -1,0 +1,41 @@
+{
+	"admin/modem": {
+		"title": "Modem",
+		"order": 30,
+		"action": {
+			"type": "firstchild",
+			"recurse": true
+		}
+	},
+
+	"admin/modem/luci-app-modemdefine": {
+		"title": "Defined modems",
+		"order": 30,
+		"action": {
+			"type": "alias",
+			"path": "admin/modem/luci-app-modemdefine/modemdefine"
+		},
+		"depends": {
+			"acl": [ "luci-app-modemdefine" ],
+			"uci": { "modemdefine": true }
+		}
+	},
+
+	"admin/modem/luci-app-modemdefine/modemdefine": {
+		"title": "Configuration",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "modem/modemdefine"
+		}
+	},
+
+	"admin/modem/luci-app-modemdefine/modemfound": {
+		"title": "Modems found",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "modem/modemfound"
+		}
+	}
+}

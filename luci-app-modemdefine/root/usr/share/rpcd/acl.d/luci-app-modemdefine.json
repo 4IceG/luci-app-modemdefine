@@ -1,0 +1,23 @@
+{
+	"luci-app-modemdefine": {
+		"description": "Grant access to luci-app-modemdefine application",
+		"read": {
+   			"cgi-io": [ "exec" ],
+    			"file": {
+				"/sys/kernel/debug/usb/devices": [ "read" ],
+				"/dev": [ "list" ],
+				"/etc/modemdefine": [ "read" ],
+				"/etc/modem/modemlist.json": [ "read" ]
+			},
+			"uci": [ "modemdefine", "luci-app-modemdefine" ]
+		},
+		"write": {
+			"file": {
+				"/etc/modemdefine": [ "write" ],
+				"/etc/modem/modemlist.json": [ "write" ]
+			},
+			"uci": [ "modemdefine", "luci-app-modemdefine" ]
+		}
+	}
+}
+
