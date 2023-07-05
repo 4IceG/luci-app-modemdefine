@@ -11,6 +11,53 @@ Supported packages:
  - luci-app-3ginfo-lite
 
 ```
+### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="24"> Installation / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="24"> Instalacja
+
+<details>
+   <summary>Pokaż | Show me</summary>
+
+#### Step 1b. Download and install manualy
+[4IceG/luci-app-modemdefine/releases](https://github.com/4IceG/luci-app-modemdefine/releases)
+
+#### Step 2. Add my repository (https://github.com/4IceG/Modem-extras) to the image and follow the commands.
+``` bash
+opkg update
+opkg install luci-app-modemdefine
+```
+ 
+</details>
+
+### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="24"> User compilation / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="24"> Kompilacja przez użytkownika
+
+<details>
+   <summary>Pokaż | Show me</summary>
+
+``` bash
+#The package can be added to Openwrt sources in two ways:
+
+cd feeds/luci/applications/
+git clone https://github.com/4IceG/luci-app-modemdefine.git
+cd ../../..
+./scripts feeds update -a; ./scripts/feeds install -a
+make menuconfig
+
+or e.g.
+
+cd packages/
+git clone https://github.com/4IceG/luci-app-modemdefine.git
+git pull
+make package/symlinks
+make menuconfig
+
+#You may need to correct the file paths and the number of folders to look like this:
+feeds/luci/applications/luci-app-modemdefine/Makefile
+or
+packages/luci-app-modemdefine/Makefile
+
+#Then you can compile the packages one by one, an example command:
+make V=s -j1 feeds/luci/applications/luci-app-modemdefine/compile
+```
+</details>
 
 ### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="24"> Preview / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="24"> Podgląd
 
