@@ -54,11 +54,19 @@ return view.extend({
   				let product = '';
 				let serialnumber = '';
   				let driver = '';
+				let bus = '';
 
   			for (const line of lines) {
     				if (line.includes('Driver=hub') || line.includes('Driver=usb-storage') || line.includes('Driver=usblp') ) {
       				driver = line.split('Driver=')[1].trim();
       				break;
+    				}
+    				
+    				if (line.includes('Spd=')) {
+      					const match = line.match(/Spd=([^ ]+)/);
+      					if (match && match[1]) {
+        					bus = match[1].trim();
+      					}
     				}
     
     				if (line.includes('Vendor=')) {
@@ -103,7 +111,8 @@ return view.extend({
       						Product: product,
       						Vendor: vendor, 
       						ProdID: pid,
-						SerialNumber: serialnumber
+      						Bus_speed: bus,
+						Serial_Number: serialnumber
     					};
     				results.push(result);
   			}

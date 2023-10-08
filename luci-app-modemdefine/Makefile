@@ -12,7 +12,7 @@ LUCI_DESCRIPTION:=LuCI JS interface to define the available modems. The list of 
 MAINTAINER:=Rafał Wabik <4Rafal@gmail.com>
 LUCI_DEPENDS:=
 LUCI_PKGARCH:=all
-PKG_VERSION:=1.0.4-20230711
+PKG_VERSION:=1.0.5-20231008
 
 define Package/luci-app-modemdefine/conffiles
 /etc/config/modemdefine
