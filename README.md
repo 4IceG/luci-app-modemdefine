@@ -61,4 +61,5 @@ make V=s -j1 feeds/luci/applications/luci-app-modemdefine/compile
 
 ### <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_United_Kingdom.png" height="24"> Preview / <img src="https://raw.githubusercontent.com/4IceG/Personal_data/master/dooffy_design_icons_EU_flags_Poland.png" height="24"> Podgląd
 
-![](https://user-images.githubusercontent.com/59826889/249215981-f07d69a2-4e6a-44fe-b216-7ab6cc8f09f2.png)
+![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/luci-app-modemdefine1.png?raw=true)
+![](https://github.com/4IceG/Personal_data/blob/master/zrzuty/luci-app-modemdefine2.png?raw=true)
