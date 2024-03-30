@@ -1,5 +1,5 @@
 #
-# Copyright 2023 Rafał Wabik - IceG - From eko.one.pl forum
+# Copyright 2023-2024 Rafał Wabik - IceG - From eko.one.pl forum
 #
 # Licensed to the GNU General Public License v3.0.
 #
@@ -12,7 +12,7 @@ LUCI_DESCRIPTION:=LuCI JS interface to define the available modems. The list of 
 MAINTAINER:=Rafał Wabik <4Rafal@gmail.com>
 LUCI_DEPENDS:=
 LUCI_PKGARCH:=all
-PKG_VERSION:=1.0.5-20231008
+PKG_VERSION:=1.0.6-20240330
 
 define Package/luci-app-modemdefine/conffiles
 /etc/config/modemdefine

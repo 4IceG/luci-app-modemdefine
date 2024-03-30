@@ -4,9 +4,10 @@
 'require view';
 'require uci';
 'require ui';
+'require tools.widgets as widgets'
 
 /*
-	Copyright 2023 Rafał Wabik - IceG - From eko.one.pl forum
+	Copyright 2023-2024 Rafał Wabik - IceG - From eko.one.pl forum
 	
 	Licensed to the GNU General Public License v3.0.
 */
@@ -23,7 +24,6 @@ function getmodem(section_id) {
 function getport(section_id) {
 	return E('span', '<code>' + (uci.get('modemdefine', section_id, 'comm_port') + '</code>' || '<code>' + '' + '</code>' ));
 }
-
 
 return view.extend({
 
@@ -160,6 +160,14 @@ return view.extend({
 		o.placeholder = _('Please select a port');
 		o.textvalue = getport.bind(o);
 		o.rmempty = false;
+		
+		o = s.taboption('general', widgets.NetworkSelect, 'network', _('Interface'),
+		_('Network interface for Internet access.')
+		);
+		o.exclude = s.section;
+		o.nocreate = true;
+		o.rmempty = false;
+		o.default = 'wan';
 
 		o = s.taboption('general', form.Value, 'user_desc', _('User description'));
 		o.modalonly = true;
