@@ -1,0 +1,53 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid "Defined modems"
+msgstr ""
+
+msgid "Defined modems"
+msgstr ""
+
+msgid "Interface to define the available modems. The list of modems will make it easier for the user to switch between modems in other LuCI applications."
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Add new modem settings..."
+msgstr ""
+
+msgid "Modem Settings"
+msgstr ""
+
+msgid "Manufacturer / Product"
+msgstr ""
+
+msgid "Please select a modem"
+msgstr ""
+
+msgid "Port for communication"
+msgstr ""
+
+msgid "Please select a port"
+msgstr ""
+
+msgid "User description"
+msgstr ""
+
+msgid "Optional"
+msgstr ""
+
+msgid "User description (optional)"
+msgstr ""
+
+msgid "Modem(s)"
+msgstr ""
+
+msgid "Configuration"
+msgstr ""
+
+msgid "Modems found"
+msgstr ""
+
+msgid "List of found modems. Not all modems may be shown."
+msgstr ""
