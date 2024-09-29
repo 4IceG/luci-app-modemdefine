@@ -1,0 +1,53 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid "Defined modems"
+msgstr "自定义modem"
+
+msgid "Defined modems"
+msgstr "自定义modem"
+
+msgid "Interface to define the available modems. The list of modems will make it easier for the user to switch between modems in other LuCI applications."
+msgstr "用于确定可用modem的接口。modem列表让用户更容易在其他 LuCI 应用程序中切换modem。"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Add new modem settings..."
+msgstr "添加新的modem设置..."
+
+msgid "Modem Settings"
+msgstr "modem设置"
+
+msgid "Manufacturer / Product"
+msgstr "modem的 制造商 / 型号"
+
+msgid "Please select a modem"
+msgstr "请选择一个modem"
+
+msgid "Port for communication"
+msgstr "通信端口"
+
+msgid "Please select a port"
+msgstr "请选择一个通信端口"
+
+msgid "User description"
+msgstr "modem备注"
+
+msgid "Optional"
+msgstr "备注只是更好的区分modem"
+
+msgid "User description (optional)"
+msgstr "备注"
+
+msgid "Modem(s)"
+msgstr "Modem(s)"
+
+msgid "Configuration"
+msgstr "配置"
+
+msgid "Modems found"
+msgstr "搜索modem"
+
+msgid "List of found modems. Not all modems may be shown."
+msgstr "找到的modem列表。并非所有的modem都显示了。"
