@@ -38,7 +38,7 @@ opkg install luci-app-modemdefine
 cd feeds/luci/applications/
 git clone https://github.com/4IceG/luci-app-modemdefine.git
 cd ../../..
-./scripts feeds update -a; ./scripts/feeds install -a
+./scripts/feeds update -a; ./scripts/feeds install -a
 make menuconfig
 
 or e.g.
